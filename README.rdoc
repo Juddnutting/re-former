@@ -1,0 +1,3 @@
+== README
+
+This is the Project: Forms in The Odin Project Ruby on Rails section 
