@@ -1,0 +1,19 @@
+<h1> Edit user information </h1>
+
+  <% @user.errors.full_messages.each do |message| %>
+      <li><%= message %> </li>
+      <%end%>
+
+
+  <%= form_for @user do |f| %>
+      <%= f.label :username, "Enter your username" %>
+      <%= f.text_field :username %> <br>
+      
+      <%= f.label :email, "Enter your email" %>
+      <%= f.text_field :email %> <br>
+      
+      <%= f.label :password %>
+      <%= f.password_field :password %> <br>
+      
+      <%= f.submit %>
+  <%end %>
